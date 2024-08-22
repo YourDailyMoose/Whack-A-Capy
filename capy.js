@@ -1,4 +1,7 @@
 let currentCapyTile;
+let currentBeaverTile;
+let score = 0;
+let gameOver = false;
 
 window.onload = function () {
     setGame();
@@ -14,6 +17,7 @@ function setGame() {
         document.getElementById("board").appendChild(tile);
     }
     setInterval(setCapy, 1500);
+    //setInterval(setBeaver, 2000); 
 }
 
 function getRandomTile() {
